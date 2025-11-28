@@ -17,12 +17,20 @@ const dadosDoCEP = {
     estado: resposta.estado,
     uf: resposta.uf
 }
+inserirDados(dadosDoCEP)
 
-enderecoUsuario.rua.innerText = dadosDoCEP.rua
+
 
 console.log(dadosDoCEP)
 
 }
-
 consultarCEP(enderecoUsuario.cep)
 
+function inserirDados(dadosDoCEP){
+enderecoUsuario.rua.innerText = dadosDoCEP.rua
+enderecoUsuario.bairro.innerText = dadosDoCEP.bairro
+enderecoUsuario.cidade.innerText = dadosDoCEP.cidade
+enderecoUsuario.estado.innerText = dadosDoCEP.estado
+enderecoUsuario.uf.innerText = dadosDoCEP.uf
+    
+}
